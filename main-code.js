@@ -17,14 +17,14 @@
   <div id="container">
     <input type="text" id="nombre" placeholder="Ingresa tu nombre" required>
     <button onclick="generarSaludo()">Saludar</button>
-    <h1 id="saludoCordial"></h1>
+    <h1 id="saludoSimple"></h1>
   </div>
 
   <script>
     function generarSaludo() {
       const nombre = document.getElementById("nombre").value;
-      const saludoCordial = document.getElementById("saludoCordial");
-      saludoCordial.textContent = `¡Hola, ${nombre}! Bienvenido`;
+      const saludoSimple = document.getElementById("saludoSimple");
+      saludoSimple.textContent = `¡Hola, ${nombre}! Bienvenido`;
     }
   </script>
 </body>
